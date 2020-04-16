@@ -1,3 +1,5 @@
+# Taken from https://gist.github.com/farzadshbfn/ed4d07a1212dfa8c23d7f64655cda7de
+
 class ClangFormatAT8 < Formula
   desc "Formatting tool for C/C++/Java/JavaScript/Objective-C/Protobuf"
   homepage "https://releases.llvm.org/8.0.0/tools/clang/docs/ClangFormat.html"
