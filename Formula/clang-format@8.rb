@@ -6,9 +6,11 @@ class ClangFormatAT8 < Formula
   version "8.0.0"
 
   if MacOS.version >= :sierra
-    url "https://llvm.org/svn/llvm-project/llvm/tags/RELEASE_800/final/", :using => :svn
+    url "https://releases.llvm.org/8.0.0/llvm-8.0.0.src.tar.xz"
+    sha256 "8872be1b12c61450cacc82b3d153eab02be2546ef34fa3580ed14137bb26224c"
   else
-    url "http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_800/final/", :using => :svn
+    url "http://releases.llvm.org/8.0.0/llvm-8.0.0.src.tar.xz"
+    sha256 "8872be1b12c61450cacc82b3d153eab02be2546ef34fa3580ed14137bb26224c"
   end
 
   depends_on "cmake" => :build
@@ -17,9 +19,11 @@ class ClangFormatAT8 < Formula
 
   resource "clang" do
     if MacOS.version >= :sierra
-      url "https://llvm.org/svn/llvm-project/cfe/tags/RELEASE_800/final/", :using => :svn
+      url "https://releases.llvm.org/8.0.0/cfe-8.0.0.src.tar.xz"
+      sha256 "084c115aab0084e63b23eee8c233abb6739c399e29966eaeccfc6e088e0b736b"
     else
-      url "http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_800/final/", :using => :svn
+      url "http://releases.llvm.org/8.0.0/cfe-8.0.0.src.tar.xz"
+      sha256 "084c115aab0084e63b23eee8c233abb6739c399e29966eaeccfc6e088e0b736b"
     end
   end
 
